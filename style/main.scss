@@ -1,0 +1,94 @@
+@import 'base/partials';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/placeholder';
+
+body{
+    font-family: $font;
+    background:$primary-color;
+    color:$secondary-color;
+}
+header{
+    background:$secondary-color;
+    nav{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            text-decoration: none;
+            color: $primary-color;
+            padding: 10px 8px;
+            &:hover{
+                background:$ternary-color;
+            }
+        }
+    }
+}
+
+.container{
+    width: calculate-width(1.1);
+    margin: 0 auto;
+    @include addPadding(30px 0 0 0);
+}
+
+.card{
+    width: calculate-width(3);
+    background:$secondary-color;
+    color: $primary-color;
+    @include rounded-border(10px);
+}
+
+.card__img{
+    @extend %image;
+}
+.card__img1{
+    @extend %image;
+    max-width: 80px;
+}
+
+.card__body{
+    @include addPadding(20px);
+}
+
+.card__category {
+    display: inline-block;
+    @include addPadding(8px);
+    background: $ternary-color;
+    @include rounded-border(20px);
+}
+
+.card__title {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.card__meta{
+    display: grid;
+    align-items: center;
+    grid-template-columns:100px 1fr;
+    margin-top: 30px;
+}
+
+.card__author {
+    font-size: 1.2rem;
+}
+
+.card__date {
+    font-size: 0.9rem;
+}
+
+// pro sass tips
+
+// 1.sturcture your files
+
+// use Sass varaible effectively
+
+//Using Mixins effeciently
+
+// use placeholder/ inheheritance 
+
+// Try using functions
+
+// Order your work
+
+// ?? be care careful of using nesting

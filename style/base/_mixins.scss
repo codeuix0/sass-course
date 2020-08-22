@@ -1,0 +1,11 @@
+@mixin rounded-border($arc){
+    border-radius:$arc;
+}
+
+@function calculate-width($span-col){
+    @return 100% / $span-col;
+}
+
+@mixin addPadding($value){
+    padding:$value;
+} 

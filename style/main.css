@@ -1,0 +1,98 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.card__img, .card__img1 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  height: auto;
+}
+
+body {
+  font-family: "lato", sans-serif;
+  background: #000;
+  color: #ffffff;
+}
+
+header {
+  background: #ffffff;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px 8px;
+}
+
+header nav a:hover {
+  background: orange;
+}
+
+.container {
+  width: 90.90909%;
+  margin: 0 auto;
+  padding: 30px 0 0 0;
+}
+
+.card {
+  width: 33.33333%;
+  background: #ffffff;
+  color: #000;
+  border-radius: 10px;
+}
+
+.card__img1 {
+  max-width: 80px;
+}
+
+.card__body {
+  padding: 20px;
+}
+
+.card__category {
+  display: inline-block;
+  padding: 8px;
+  background: orange;
+  border-radius: 20px;
+}
+
+.card__title {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card__meta {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 100px 1fr;
+      grid-template-columns: 100px 1fr;
+  margin-top: 30px;
+}
+
+.card__author {
+  font-size: 1.2rem;
+}
+
+.card__date {
+  font-size: 0.9rem;
+}
+/*# sourceMappingURL=main.css.map */
